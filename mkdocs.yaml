@@ -1,0 +1,12 @@
+site_name: 'gdg-app'
+site_description: 'Main documentation for the gdg-app'
+repo_url: https://github.com/pkill-2913/gdg-app
+edit_uri: edit/main/docs
+
+plugins:
+  - techdocs-core
+
+# For sidebar navigation on https://backstage.io/, see `microsite/sidebars.json`
+nav:
+  - Overview:
+      - Getting started: 'docs/index.md'

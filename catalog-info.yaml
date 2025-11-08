@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gdg-app
+  description: Python app that displays time - named gdg-app
+  annotations:
+    github.com/project-slug: pkill-2913/gdg-app
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
