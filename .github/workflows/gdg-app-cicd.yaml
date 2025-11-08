@@ -44,6 +44,7 @@ jobs:
       - name: Modify values file
         shell: bash
         run: |
+          sudo apt-get install pip
           echo ${{needs.ci.outputs.commit_id}}
           pip install yq
           yq -Yi '.image.tag = "${{needs.ci.outputs.commit_id}}"' charts/gdg-app/values-dev.yaml
@@ -93,3 +94,4 @@ jobs:
         run: |
           argocd app sync gdg-app
           argocd app wait gdg-app --timeout 180
+
